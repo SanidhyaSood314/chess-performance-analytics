@@ -1,0 +1,1 @@
+from .settings import USERNAME, APP_TITLE, APP_DESCRIPTION, PAGE_CONFIG
