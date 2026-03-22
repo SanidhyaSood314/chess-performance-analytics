@@ -27,6 +27,4 @@ PAGE_CONFIG = {
 # Engine Configuration
 # -------------------------------------------------
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-ENGINE_PATH = os.path.join(BASE_DIR, "engines", "stockfish.exe")
+ENGINE_PATH = "stockfish"
