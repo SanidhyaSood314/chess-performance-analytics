@@ -1,10 +1,16 @@
 # ♟️ Chess Performance Analytics
 
-A full-stack chess analytics web application that transforms raw game data into **actionable performance insights** using engine evaluation and behavioral pattern analysis.
+A chess analytics web application that transforms raw game data into **actionable performance insights** using engine evaluation and behavioral pattern detection.
 
 ---
 
-## 🚀 Overview
+## 🚀 Live Demo
+
+(https://chess-analytics.streamlit.app/)
+
+---
+
+## 🧠 Overview
 
 Most chess tools analyze moves.
 
@@ -16,194 +22,141 @@ It identifies:
 * Which phase you struggle in
 * What you should improve
 
-👉 Turning raw engine evaluations into **coaching insights**
-
 ---
 
 ## ✨ Key Features
 
 ### 🔍 Game Analysis
 
-* Upload PGN or fetch games from Chess.com
+* PGN upload and Chess.com integration
 * Engine-powered evaluation using Stockfish
-* Move classification:
-
-  * Brilliant
-  * Best
-  * Great
-  * Inaccuracy
-  * Mistake
-  * Blunder
+* Move classification (best, mistake, blunder, etc.)
 
 ---
 
-### 📊 Performance Dashboard
+### 📊 Performance Analytics
 
-* Win / Draw / Loss statistics
-* Performance by color (White vs Black)
-* Rating trends and opponent strength
-* Time-based filtering (Today, Week, Month)
+* Win / draw / loss statistics
+* Performance by color
+* Rating-based analysis
+* Time-based filtering
 
 ---
 
 ### 🧠 Intelligence Layer (Core Feature)
 
-* Phase-wise accuracy:
-
-  * Opening
-  * Middlegame
-  * Endgame
+* Phase-wise accuracy (Opening, Middlegame, Endgame)
 * Error pattern detection
-* Player-specific analysis (only your moves)
-* Insight generation:
-
-  * Weakness identification
-  * Error distribution
+* Insight generation (player weaknesses)
+* Player-specific analysis
 
 ---
 
-### 🎯 AI-like Coaching
+### 🎯 Coaching System
 
-* Personalized recommendations:
-
-  * Tactical improvement
-  * Phase-specific weaknesses
-* Blunder pattern detection
-* Actionable improvement suggestions
+* Personalized recommendations
+* Tactical and positional feedback
+* Blunder analysis
 
 ---
 
-### 📈 Visualization
+### 🧾 Game Summary
 
-* Interactive chessboard
-* Move navigation system
-* Evaluation graph with proper move indexing
-* Evaluation bar (real-time position strength)
-
----
-
-### 🧾 Game Summary Report
-
-* Auto-generated performance summary
-* Combines:
-
-  * Accuracy
-  * Insights
-  * Recommendations
-* Provides a **clear takeaway for improvement**
+* Auto-generated performance report
+* Combines insights, accuracy, and recommendations
+* Provides clear improvement direction
 
 ---
 
 ## 🖥️ Tech Stack
 
-* **Python**
-* **Streamlit** (UI)
-* **python-chess**
-* **Stockfish** (engine)
-* **Plotly** (visualizations)
-* **Pandas**
-
----
-
-## 🧠 Key Idea
-
-Instead of just answering:
-
-> “Was this move good or bad?”
-
-This system answers:
-
-> “Why are you losing, and how can you improve?”
+* Python
+* Streamlit
+* python-chess
+* Stockfish
+* Plotly
+* Pandas
 
 ---
 
 ## 📸 Screenshots
 
-> Add screenshots here after running the app
+### Dashboard
 
-Recommended:
+![Dashboard](screenshots/dashboard.png)
 
-* Dashboard
-* Game Viewer
-* Evaluation Graph
-* Insights & Recommendations
-* Game Summary
+### Game Viewer
+
+![Game Viewer](screenshots/game_viewer.png)
+
+### Evaluation Graph
+
+![Evaluation Graph](screenshots/eval_graph.png)
+
+### Insights & Recommendations
+
+![Insights](screenshots/insights.png)
+
+### Game Summary
+
+![Summary](screenshots/summary.png)
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ Setup Instructions
+
+### 1. Clone repository
 
 ```bash
-git clone https://github.com/your-username/chess-performance-analytics.git
+git clone https://github.com/SanidhyaSood314/chess-performance-analytics.git
 cd chess-performance-analytics
+```
 
+---
+
+### 2. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+### 3. Install Stockfish
+
+Download from: https://stockfishchess.org/download/
+
+Ensure it is accessible via:
+
+```bash
+stockfish
+```
+
+---
+
+### 4. Run app
+
+```bash
 streamlit run app.py
 ```
 
 ---
 
-## 📁 Project Structure
+## 💡 Key Idea
 
-```
-core/
-  data/
-  engine/
-  analytics/
-  intelligence/
+This project focuses on:
 
-services/
-ui/
-  components/
-  views/
-
-app.py
-```
-
----
-
-## 📌 Features Implemented
-
-* PGN parsing
-* Chess.com API integration
-* Engine-based move evaluation
-* Move classification system
-* Accuracy calculation
-* Player-specific analytics
-* Phase-based performance analysis
-* Insight generation engine
-* Recommendation engine
-* Game report generator
+👉 Converting engine evaluations into player insights
+👉 Identifying weaknesses
+👉 Providing actionable improvement strategies
 
 ---
 
 ## 🚧 Future Improvements
 
 * ECO-based opening detection
-* Blunder heatmap visualization
+* Blunder heatmap
 * Player style classification
-* Opening performance analytics
 * Advanced coaching system
-
----
-
-## 💡 Why This Project Matters
-
-This project focuses on:
-
-* **Data-driven decision making**
-* **Behavioral pattern detection**
-* **User-centric insights**
-* **System design & architecture**
-
-It bridges the gap between:
-
-> raw analysis → meaningful improvement
-
----
-
-## 🙌 Feedback
-
-Feedback, suggestions, and improvements are welcome!
 
 ---
